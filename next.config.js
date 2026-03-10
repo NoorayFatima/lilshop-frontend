@@ -1,5 +1,3 @@
-// next.config.js
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // ... other configuration settings ...
@@ -7,10 +5,10 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '9000',
-        pathname: '/static/**', // Allows access to images under /static/
+        protocol: 'https',
+        hostname: 'noorayfatima-lilshop.hf.space',
+        port: '', // Hugging Face uses standard HTTPS (no port needed)
+        pathname: '/static/**', 
       },
     ],
     unoptimized: true,
